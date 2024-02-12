@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+       font-size: 11px; text-align: center;
+     }
+    .attribution a { 
+      color: hsl(228, 45%, 44%);
+     }
+  body {
+    display: flex;
+    background-color:  hsl(235, 18%, 26%);
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .form{
+    position: relative;
+    height: 500px;
+    width: 1000px;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 25px;
+    padding: 90px 50px;
+    
+    
+  }
+  p{
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   
+  }
+  .image {
+      position: absolute;
+      top: 0; /* Adjust as needed */
+      right: 150px; /* Adjust as needed */
+      padding: 40px 10px;
+    }
+    h1{
+      
+      font-family: 'Roboto', sans-serif;;
+      font-weight: 900;
+    }
+    input{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      height: 50px;
+      width: 450px;
+      border: 1px solid hsl(231, 7%, 60%) ;
+      border-radius: 5px;
+      font-size: 20px;
+     text-indent: 20px;
+    }
+    label{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+    }
+    ::placeholder{
+      font-family: 'Roboto' sans-serif;
+      font-weight: 500;
+      color: hsl(231, 7%, 60%);
+    
+    }
+    button{
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      border: none;
+      background-color: hsl(234, 29%, 20%);
+      color: hsl(0, 0%, 100%);
+      height: 50px;
+      width: 458px;
+      border-radius: 5px;
+      font-size: 20px;
+      cursor: pointer;
+     
+
+    }
+    button:hover{
+      background-color:  hsl(4, 100%, 67%);
+      box-shadow: 0px 3px 10px hsl(4, 100%, 67%);
+
+    }
+  
+
+  </style>
+</head>
+<body>
+<main class="content">
+  <!-- Sign-up form start -->
+<form class="form"  id="envio">
+ 
+  <h1>Stay updated!</h1> 
+
+  <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
+
+  <p><img  src="assets/images/icon-list.svg"> Product discovery and building what matters</p>
+  <p><img  src="assets/images/icon-list.svg"> Measuring to ensure updates are a success</p>
+  <p><img  src="assets/images/icon-list.svg"> And much more!</p>
+    <br>
+    <br>
+  <label for="email">Email address</label>  <br> <br>
+  <input type="email" id="email" maxlength="20" placeholder="Seunome@gmail.com:" required> <br> <br>
+ 
+  <button id="envio" type="submit">Subscribe to monthly newsletter</button>
+  <div class="image">
+   <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
+ </div>
+</form>
+
+  <!-- Sign-up form end -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">abelardo souza</a>.
+  </div>
+</main>
+<script>
+  document.getElementById("envio").addEventListener("submit", function(event) {
+    event.preventDefault();
+    
+    window.location.href ="sucesso.html"
+  });
+</script>
+</body>
+</html>
